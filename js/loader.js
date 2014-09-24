@@ -1,0 +1,1 @@
+$(function(){location.hash="#welcome.html";loader("welcome.html")});var loader=function(n){$.get(n,function(o){var t=$(o);$("#content").html(t);ga("send","event","content","load",n);MathJax.Hub.Queue(["Typeset",MathJax.Hub,"content"])})};window.onhashchange=function(){console.log(location.hash);loader(location.hash.substring(1))};

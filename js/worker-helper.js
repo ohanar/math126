@@ -1,0 +1,1 @@
+(function(){importScripts("marchingcubesraw.js");self.onmessage=function(e){self.onmessage=null;console.log(e.data);return eval(e.data)}}).call(this);

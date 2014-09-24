@@ -1,0 +1,1 @@
+fixScale=function(e){var t="addEventListener",i="gesturestart",n="querySelectorAll",r=[1,1],a=n in e?e[n]("meta[name=viewport]"):[];function m(){a.content="width=device-width,minimum-scale="+r[0]+",maximum-scale="+r[1];e.removeEventListener(i,m,true)}if((a=a[a.length-1])&&t in e){m();r=[.25,1.6];e[t](i,m,true)}};
